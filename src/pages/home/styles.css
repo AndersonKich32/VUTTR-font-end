@@ -1,0 +1,271 @@
+.home{  
+    position: relative;   
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42vw;
+    height: 100vh;   
+    display: flex;
+    flex-direction: column; 
+}
+
+.home-header{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.home-header p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.home-main{
+    width: 100%;   
+}
+
+.home-main-section-01{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+
+.home-main-section-01 .box-section{
+    position: relative;
+    width: 50%;
+    display: flex;    
+}
+
+.box-section .search{
+    border: 2px solid #e0e0e0;
+    background-color: #ffffff;
+    width: 50%;
+    height: 25px;
+    display: flex;
+    align-items: center;  
+}
+
+.box-section .search input[type='text']{
+    width: 70%;
+    height: 100%;
+    border: 0;
+}
+
+.box-section .search-checkbox{
+    width: 50%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.box-section .search-checkbox input[type='checkbox']{
+    margin-right: 10px;
+}
+
+.box-section .add{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(0, 178, 51);
+    width: 70px;
+    height: 25px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    transition: all .3s ease-in-out;
+    background-color: rgb(0, 178, 51);
+}
+
+.box-section .add:hover{
+    box-shadow:none;
+    transform: translateY(3px);
+}
+
+.box-section .add button{
+    width: 70%;
+    height: 100%;
+    border: 0;
+    background-color: rgb(0, 178, 51);
+    color: #fff;
+}
+
+.home-main-section-02{
+    width: 100%;
+    height: 360px;
+    margin-top: 30px;
+    overflow-y: auto;
+}
+
+.box-list{
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-top: 10px solid rgb(53, 51, 51);
+    background-color: #ffffff;
+}
+
+.box-list .title{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    display: flex;
+}
+
+.box-list .btn-delete{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    border: 2px solid #e0e0e0;
+    width: 70px;
+    height: 100%;
+    transition: all .5s linear;
+    background-color: rgb(223, 46, 48);
+    border: 2px solid #fff;
+}
+
+.box-list .btn-delete:hover{
+    border: 2px solid  rgb(223, 46, 48);  
+}
+
+.box-list .btn-delete button{
+    border: 0;
+    background-color: rgb(223, 46, 48);
+    color: #fff;
+}
+
+.box-list h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box-list a{
+    color: #467eae;
+}
+
+.box-list a:hover{
+    color: #155a96;
+}
+
+.box-list .description{
+    margin-top: 10px;
+    line-height: 24px;
+    font-size: 18px;
+    white-space: pre-wrap;
+}
+
+.box-list .list-tools{
+    font-family: Bebas Neue;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.box-delete{
+    width: 70%;
+    height: 140px;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 10px;
+    z-index: 99;
+    font-weight: bold;
+}
+
+.box-delete .delete-title{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.box-delete .delete-description{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+    z-index: -99;
+}
+
+.form-add-tool{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    min-height: 450px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 99;
+}
+
+.form-add-tool label{
+    width: 100%;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.form-add-tool input{
+    width: 100%;
+    height: 25px;
+    background-color: #bbbbc0;
+    border: 2px solid #e0e0e0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.form-add-tool textarea{
+    width: 100%;
+    height: 125px;
+    background-color: #bbbbc0;
+    border: 2px solid #e0e0e0;
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: none;
+    overflow-y: auto ;
+}
+
+.veiw-block{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+ .none{
+    z-index: -5;
+    visibility: hidden;
+}
+
+.block{
+    z-index: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
